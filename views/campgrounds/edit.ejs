@@ -1,0 +1,13 @@
+<%-include('../partials/header')%>
+<div class="container my-5 py-3" style="text-align: center; background-color: #e9ecef;">    
+    <h3>Edit <%=campground.name%></h3>
+    <form action="/campgrounds/<%= campground._id %>?_method=PUT" method="POST">
+        <div style="width: 30%; margin: 0 auto;">
+            <input type="text" class="form-control mb-3" value="<%=campground.name%>"  name="campground[name]">
+            <input type="text" class="form-control mb-3" value="<%=campground.image%>" name="campground[image]">
+            <input type="text" class="form-control mb-3" value="<%=campground.description%>" name="campground[description]">
+            <button class="btn btn-lg btn-danger btn-block">Update</button>
+        </div>
+    </form>
+</div>
+<%-include('../partials/footer')%>

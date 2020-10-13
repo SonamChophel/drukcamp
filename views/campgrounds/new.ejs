@@ -1,0 +1,15 @@
+<%-include('../partials/header')%>
+
+<div class="container my-5 py-3" style="text-align: center; background-color: #e9ecef;">    
+    <h3>Add New Campgrounds</h3>
+    <form action="/campgrounds" method="POST">
+        <div style="width: 30%; margin: 0 auto;">
+            <input type="text" class="form-control mb-3"placeholder="name" name="name">
+            <input type="text" class="form-control mb-3" placeholder="image src" name="image">
+            <input type="text" class="form-control mb-3" placeholder="description" name="description">
+            <button class="btn btn-lg btn-danger btn-block">Submit</button>
+        </div>
+    </form>
+</div>
+
+<%-include('../partials/footer')%>

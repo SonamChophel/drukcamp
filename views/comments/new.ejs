@@ -1,0 +1,13 @@
+<%-include('../partials/header')%>
+
+<div class="container my-5 py-3" style="text-align: center; background-color: #e9ecef;">    
+    <h3>Add New Comments to <%=campground.name%></h3>
+    <form action="/campgrounds/<%=campground._id%>/comment" method="POST">
+        <div style="width: 30%; margin: 0 auto;">
+            <input type="text" class="form-control mb-3"    name="comment[text]" placeholder="text">
+            <button class="btn btn-lg btn-info btn-block">Submit</button>
+        </div>
+    </form>
+</div>
+
+<%-include('../partials/footer')%>
